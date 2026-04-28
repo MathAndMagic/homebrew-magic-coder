@@ -2,25 +2,25 @@ class MagicCoder < Formula
   desc "Magic Coder terminal UI"
   homepage "https://coder.bridgeapp.ai"
   license "LicenseRef-Proprietary"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.0.0/magic-coder-v1.0.0-aarch64-apple-darwin.tar.gz"
-      sha256 "59e65dc00611a23ad3e109bbd6ba3e711b148e13e6a8341a35de73edf5b8be06"
+      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.0.1/magic-coder-v1.0.1-aarch64-apple-darwin.tar.gz"
+      sha256 "d9f51459d9f05de2663dcb731754e872d42bdd9f783afd6b9847ab06b0495d04"
     else
-      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.0.0/magic-coder-v1.0.0-x86_64-apple-darwin.tar.gz"
-      sha256 "4ba043be2eea7d1852e08ae49e655c21b462766e3cb7846549b91669b13b3fc2"
+      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.0.1/magic-coder-v1.0.1-x86_64-apple-darwin.tar.gz"
+      sha256 "78abd3926965d018a80bb951e6e9679f86d9f00bb32dca6296b7b8eea4d7fb7c"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.0.0/magic-coder-v1.0.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b5247aba3431e1c3c5869fe858fe888212eee4ff73b4c2babb8ed3cea81afcd9"
+      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.0.1/magic-coder-v1.0.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "bb141211b43b625a20452711ec532b7b9be3d94dece3b1a78c02346fcddbb3b8"
     else
-      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.0.0/magic-coder-v1.0.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "693687304d789d641d09791a8991c2efaafd6ac5911d7d5d2bcd9b06d36ec41b"
+      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.0.1/magic-coder-v1.0.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a62e34f3f123dbdd396163d3edf3b4dbb6e37ffc1f6941cb222edbd5ec5bd853"
     end
   end
 
