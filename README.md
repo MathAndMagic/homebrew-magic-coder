@@ -2,6 +2,8 @@
 
 Dedicated Homebrew tap for the `magic-coder` CLI.
 
+Homebrew installs currently support macOS and Linux `x86_64` and `arm64`.
+
 ## Install
 
 ```bash

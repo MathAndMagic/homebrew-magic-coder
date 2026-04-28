@@ -2,21 +2,33 @@ class MagicCoder < Formula
   desc "Magic Coder terminal UI"
   homepage "https://coder.bridgeapp.ai"
   license "LicenseRef-Proprietary"
-  version "0.29.0"
+  version "1.0.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v0.29.0/magic-coder-v0.29.0-aarch64-apple-darwin.tar.gz"
-      sha256 "561c440c250bfd7e6b5305402631e39e0febc01a4acb7496da5b4244ab52de97"
+      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.0.0/magic-coder-v1.0.0-aarch64-apple-darwin.tar.gz"
+      sha256 "a890630691970f9d8ca798be3d4d15887b68fa233e51e771370519e86b56faa9"
     else
-      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v0.29.0/magic-coder-v0.29.0-x86_64-apple-darwin.tar.gz"
-      sha256 "d63beebbef02edcb712004f5737c93a9c965274b34cb6998b200c76fc20afe7d"
+      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.0.0/magic-coder-v1.0.0-x86_64-apple-darwin.tar.gz"
+      sha256 "c9ff5be61d877d465dd0e5302fd4b02b5f4be8eb260b078f0064eaf0b85abd2e"
     end
   end
 
-  depends_on :macos
+  on_linux do
+    if Hardware::CPU.arm?
+      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.0.0/magic-coder-v1.0.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "43aff0263d4863cda4757adfe244f50dd457c37a375696176a5c128f2e6fb90b"
+    else
+      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.0.0/magic-coder-v1.0.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "30729fd118274c0e77d0f5727911da53a6c804493373747c51a8e983359e6208"
+    end
+  end
 
   def install
+    if OS.linux? && !Hardware::CPU.intel? && !Hardware::CPU.arm?
+      odie "magic-coder Homebrew support on Linux currently requires x86_64 or arm64"
+    end
+
     bin.install "coder"
   end
 
