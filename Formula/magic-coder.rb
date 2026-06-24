@@ -2,25 +2,25 @@ class MagicCoder < Formula
   desc "Magic Coder terminal UI"
   homepage "https://coder.bridgeapp.ai"
   license "LicenseRef-Proprietary"
-  version "1.1.1"
+  version "1.2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.1.1/magic-coder-v1.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "c1606110fa9cdbca0dc323787370d1423444a06d02be13afa186c1c8be92603a"
+      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.2.0/magic-coder-v1.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "f5ab2f5d469785625ec3325aa663971bed5642d7b2c17271c5d64af374de00d7"
     else
-      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.1.1/magic-coder-v1.1.1-x86_64-apple-darwin.tar.gz"
-      sha256 "89908f944fb8b9bc72c2b89a6980e1f6e1868d575d2692bf17a458efef3f0dac"
+      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.2.0/magic-coder-v1.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "604cbb7c474d3205a696562cd15e6354635f2bfc6731aa4415cbb521630103c9"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.1.1/magic-coder-v1.1.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "962b596b36873e50a52230edba94fa3e76b7ea0d010683ff9c66cc7640e24876"
+      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.2.0/magic-coder-v1.2.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8d542a4ad910be247022c09f9645d991d697c5f31c4cb2e1dcd7a5e4d9110995"
     else
-      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.1.1/magic-coder-v1.1.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a12d681c3ac6cd4383c5afafa9eab2150bc45cf8b430c6c539d74326a86a37c1"
+      url "https://github.com/MathAndMagic/magic-coder-tui-releases/releases/download/v1.2.0/magic-coder-v1.2.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6e4bbd2843a9e3df8b324980ef555bc4d24085897c602556b2227242be242675"
     end
   end
 
